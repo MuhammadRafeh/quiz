@@ -1,6 +1,17 @@
 import React from 'react';
 import { View, TouchableOpacity, Text, StyleSheet } from 'react-native';
 
+
+export const Button = ({ text, onPress = () => {} }) => (
+  <TouchableOpacity onPress={onPress} style={styles.button}>
+    <Text style={styles.text}>{text}</Text>
+  </TouchableOpacity>
+);
+
+export const ButtonContainer = ({ children }) => (
+  <View style={styles.buttonContainer}>{children}</View>
+);
+
 const styles = StyleSheet.create({
   button: {
     backgroundColor: 'rgba(255, 255, 255, 0.3)',
@@ -23,13 +34,3 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
 });
-
-export const Button = ({ text, onPress = () => {} }) => (
-  <TouchableOpacity onPress={onPress} style={styles.button}>
-    <Text style={styles.text}>{text}</Text>
-  </TouchableOpacity>
-);
-
-export const ButtonContainer = ({ children }) => (
-  <View style={styles.buttonContainer}>{children}</View>
-);
