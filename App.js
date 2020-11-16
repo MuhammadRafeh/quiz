@@ -1,4 +1,3 @@
-
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 
@@ -14,6 +13,9 @@ const MainStack = createStackNavigator({
   },
   Quiz: {
     screen: Quiz,
+    navigationOptions: ({ navigation }) => ({
+      headerTitle: navigation.getParam('title'),
+    }),
   },
 });
 
