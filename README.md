@@ -1,6 +1,8 @@
 # Quiz
 React Native based quiz app where focused is on UI not on functionality
 
+## Preview
+
 <p float="left">
   <img src="https://i.imgur.com/5lQkVDL.jpg" width="28%" />
   <img src="https://i.imgur.com/ad8Et4d.jpg" width="28%" />
